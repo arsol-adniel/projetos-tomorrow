@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0A1428;
+    min-height: 100vh;
+}
+
+.header {
+    margin: 10px;
+    width: 100%;
+    color: #C8AA6E;
+    display: flex;
+}
+
+.header button {
+    background-color: #C8AA6E;
+    color: #0A1428;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+}
+
+.inicio {
+    padding: 3px;
+    border: 1px solid #fff;
+    margin: 0 20px;
+}
+
+.inicio a, .inicio a button{
+    width: 100%;
+}
+
+.titulo {
+    padding: 20px 0;
+    text-align: center;
+    color: #C8AA6E;
+}
+
+button:hover {
+    background-color: #FFBB6E !important; 
+}
+
+#builds {
+    width: 90vw;
+    margin: 50px auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.build {
+    background-color: #0f1c35;
+    border-radius: 10px;
+    display: flex;
+    transition: .3s;
+    overflow: hidden;
+}
+.build:hover {
+    background-color: #C8AA6E;
+}
+
+.build .icones-itens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+.build .icone-item {
+    width: 60px;
+    height: 60px;
+}
+
+.botoes-build {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+}
+
+.editar-build {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C8AA6E;
+    color: #fff;
+    height: 50%;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.deletar-build {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #900603;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    height: 50%;
+}
+
